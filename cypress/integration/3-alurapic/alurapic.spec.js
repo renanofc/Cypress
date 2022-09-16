@@ -30,4 +30,16 @@ describe('Login e registro de usuarios alura pic', () => {
         cy.contains('button', 'Register').click();
         cy.contains('ap-vmessage', 'Mininum length is 8').should('be.visible');
     })
+
+    it.only('fazer login de usuario valido', () => {
+        cy.login('flavio', '123')
+        cy.contains('a', '(Logout)').should('be.vesible');
+    })
+
+    it.only('fazer login de usuario invalido', () => {
+        cy.login('aaaaass', '2121sss')
+        cy.on ('window:alert', (str) => {
+            expect(str).to.equal('Invalid user name or password')
+        })
+    })   
 })
