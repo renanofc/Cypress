@@ -1,0 +1,22 @@
+[
+
+    {
+        "email": "renanteste@gmail.com",
+        "fullName": "Renan Moreira",
+        "userName": "renanzinho",
+        "password": "123"
+    },
+    {
+        "email": "renanteste2@gmail.com",
+        "fullName": "Renan Moreira",
+        "userName": "renanzinho2",
+        "password": "123"
+    },
+    {
+        "email": "renanteste3@gmail.com",
+        "fullName": "Renan Moreira",
+        "userName": "renanzinho3",
+        "password": "123"
+    } 
+
+]
