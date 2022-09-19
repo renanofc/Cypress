@@ -6,8 +6,9 @@ describe('Login de usuarios', () => {
      })
 
      it('fazer login de usuario valido', () => {
-        cy.login('flavio', '123')
-        cy.contains('a', '(Logout)').should('be.vesible');
+        cy.login(Cypress.env('userName'), Cypress.env('password')) // Puxando do comando criado em gui_commands
+        cy.wait(10000);
+        cy.contains('a', '(Logout)').should('be.visible');
     })
 
     it('fazer login de usuario invalido', () => {
